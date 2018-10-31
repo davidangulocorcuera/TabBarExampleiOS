@@ -11,10 +11,32 @@ import UIKit
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-
+  var window: UIWindow?
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        window = UIWindow(frame: UIScreen.main.bounds)
+           
+            if let window = window {
+            let chatsVC = ChatViewController()
+            let favoritesVC = LikeViewController()
+            let contactsVC = ContactViewController()
+            let settingsVC = ServicesViewController()
+                let navigationControllerChat = UINavigationController(rootViewController:
+                    chatsVC)
+                let navigationControllerLike = UINavigationController(rootViewController: favoritesVC)
+                let navigationControllerContact = UINavigationController(rootViewController: contactsVC)
+                let navigationControllerServices = UINavigationController(rootViewController: settingsVC)
+                
+                let tabBarController = UITabBarController()
+                tabBarController.viewControllers =
+                [navigationControllerChat,navigationControllerLike,navigationControllerContact,navigationControllerServices]
+                tabBarController.tabBar.isTranslucent = false
+                window.rootViewController = tabBarController
+                window.makeKeyAndVisible()
+                
+            }
+        
         // Override point for customization after application launch.
         return true
     }

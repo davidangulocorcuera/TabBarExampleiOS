@@ -8,12 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		84EE49CB2189B7F400FC301E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49CA2189B7F400FC301E /* AppDelegate.swift */; };
-		84EE49CD2189B7F400FC301E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49CC2189B7F400FC301E /* ViewController.swift */; };
-		84EE49D02189B7F400FC301E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49CE2189B7F400FC301E /* Main.storyboard */; };
 		84EE49D22189B7F600FC301E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49D12189B7F600FC301E /* Assets.xcassets */; };
 		84EE49D52189B7F600FC301E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49D32189B7F600FC301E /* LaunchScreen.storyboard */; };
 		84EE49E02189B7F600FC301E /* Tab_bar_exampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49DF2189B7F600FC301E /* Tab_bar_exampleTests.swift */; };
 		84EE49EB2189B7F600FC301E /* Tab_bar_exampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49EA2189B7F600FC301E /* Tab_bar_exampleUITests.swift */; };
+		84EE49FF2189BE2000FC301E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49FD2189BE2000FC301E /* ChatViewController.swift */; };
+		84EE4A002189BE2000FC301E /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49FE2189BE2000FC301E /* ChatViewController.xib */; };
+		84EE4A032189BE3900FC301E /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A012189BE3900FC301E /* LikeViewController.swift */; };
+		84EE4A042189BE3900FC301E /* LikeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A022189BE3900FC301E /* LikeViewController.xib */; };
+		84EE4A072189BE5500FC301E /* ServicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A052189BE5500FC301E /* ServicesViewController.swift */; };
+		84EE4A082189BE5500FC301E /* ServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A062189BE5500FC301E /* ServicesViewController.xib */; };
+		84EE4A0D2189BFC600FC301E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A0B2189BFC600FC301E /* ContactViewController.swift */; };
+		84EE4A0E2189BFC600FC301E /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A0C2189BFC600FC301E /* ContactViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,8 +42,6 @@
 /* Begin PBXFileReference section */
 		84EE49C72189B7F400FC301E /* Tab_bar_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tab_bar_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EE49CA2189B7F400FC301E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84EE49CC2189B7F400FC301E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		84EE49CF2189B7F400FC301E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EE49D12189B7F600FC301E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84EE49D42189B7F600FC301E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84EE49D62189B7F600FC301E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -47,6 +51,14 @@
 		84EE49E62189B7F600FC301E /* Tab_bar_exampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tab_bar_exampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EE49EA2189B7F600FC301E /* Tab_bar_exampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab_bar_exampleUITests.swift; sourceTree = "<group>"; };
 		84EE49EC2189B7F600FC301E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EE49FD2189BE2000FC301E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		84EE49FE2189BE2000FC301E /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		84EE4A012189BE3900FC301E /* LikeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		84EE4A022189BE3900FC301E /* LikeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LikeViewController.xib; sourceTree = "<group>"; };
+		84EE4A052189BE5500FC301E /* ServicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewController.swift; sourceTree = "<group>"; };
+		84EE4A062189BE5500FC301E /* ServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesViewController.xib; sourceTree = "<group>"; };
+		84EE4A0B2189BFC600FC301E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		84EE4A0C2189BFC600FC301E /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +109,8 @@
 		84EE49C92189B7F400FC301E /* Tab_bar_example */ = {
 			isa = PBXGroup;
 			children = (
+				84EE49F82189BD9300FC301E /* ViewController */,
 				84EE49CA2189B7F400FC301E /* AppDelegate.swift */,
-				84EE49CC2189B7F400FC301E /* ViewController.swift */,
-				84EE49CE2189B7F400FC301E /* Main.storyboard */,
 				84EE49D12189B7F600FC301E /* Assets.xcassets */,
 				84EE49D32189B7F600FC301E /* LaunchScreen.storyboard */,
 				84EE49D62189B7F600FC301E /* Info.plist */,
@@ -123,6 +134,53 @@
 				84EE49EC2189B7F600FC301E /* Info.plist */,
 			);
 			path = Tab_bar_exampleUITests;
+			sourceTree = "<group>";
+		};
+		84EE49F82189BD9300FC301E /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EE49FC2189BDCB00FC301E /* ChatViewController */,
+				84EE49FB2189BDB800FC301E /* LikeViewController */,
+				84EE49FA2189BDAD00FC301E /* ServicesViewController */,
+				84EE49F92189BDA000FC301E /* ContactViewController */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		84EE49F92189BDA000FC301E /* ContactViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EE4A0B2189BFC600FC301E /* ContactViewController.swift */,
+				84EE4A0C2189BFC600FC301E /* ContactViewController.xib */,
+			);
+			path = ContactViewController;
+			sourceTree = "<group>";
+		};
+		84EE49FA2189BDAD00FC301E /* ServicesViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EE4A052189BE5500FC301E /* ServicesViewController.swift */,
+				84EE4A062189BE5500FC301E /* ServicesViewController.xib */,
+			);
+			path = ServicesViewController;
+			sourceTree = "<group>";
+		};
+		84EE49FB2189BDB800FC301E /* LikeViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EE4A012189BE3900FC301E /* LikeViewController.swift */,
+				84EE4A022189BE3900FC301E /* LikeViewController.xib */,
+			);
+			path = LikeViewController;
+			sourceTree = "<group>";
+		};
+		84EE49FC2189BDCB00FC301E /* ChatViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84EE49FD2189BE2000FC301E /* ChatViewController.swift */,
+				84EE49FE2189BE2000FC301E /* ChatViewController.xib */,
+			);
+			path = ChatViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,9 +287,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84EE4A082189BE5500FC301E /* ServicesViewController.xib in Resources */,
+				84EE4A0E2189BFC600FC301E /* ContactViewController.xib in Resources */,
 				84EE49D52189B7F600FC301E /* LaunchScreen.storyboard in Resources */,
 				84EE49D22189B7F600FC301E /* Assets.xcassets in Resources */,
-				84EE49D02189B7F400FC301E /* Main.storyboard in Resources */,
+				84EE4A002189BE2000FC301E /* ChatViewController.xib in Resources */,
+				84EE4A042189BE3900FC301E /* LikeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,8 +317,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EE49CD2189B7F400FC301E /* ViewController.swift in Sources */,
+				84EE49FF2189BE2000FC301E /* ChatViewController.swift in Sources */,
 				84EE49CB2189B7F400FC301E /* AppDelegate.swift in Sources */,
+				84EE4A072189BE5500FC301E /* ServicesViewController.swift in Sources */,
+				84EE4A032189BE3900FC301E /* LikeViewController.swift in Sources */,
+				84EE4A0D2189BFC600FC301E /* ContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,14 +357,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		84EE49CE2189B7F400FC301E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				84EE49CF2189B7F400FC301E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		84EE49D32189B7F600FC301E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
