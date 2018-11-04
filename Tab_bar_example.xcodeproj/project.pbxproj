@@ -20,6 +20,10 @@
 		84EE4A082189BE5500FC301E /* ServicesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A062189BE5500FC301E /* ServicesViewController.xib */; };
 		84EE4A0D2189BFC600FC301E /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A0B2189BFC600FC301E /* ContactViewController.swift */; };
 		84EE4A0E2189BFC600FC301E /* ContactViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A0C2189BFC600FC301E /* ContactViewController.xib */; };
+		84EE4A112189C84D00FC301E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A132189C84D00FC301E /* Localizable.strings */; };
+		84EE4A172189D20C00FC301E /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A162189D20C00FC301E /* Style.swift */; };
+		84EE4A192189D22C00FC301E /* ColorStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE4A182189D22C00FC301E /* ColorStyle.swift */; };
+		84EE4A1C2189D88D00FC301E /* PoorStory-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84EE4A1B2189D88D00FC301E /* PoorStory-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +63,11 @@
 		84EE4A062189BE5500FC301E /* ServicesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ServicesViewController.xib; sourceTree = "<group>"; };
 		84EE4A0B2189BFC600FC301E /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
 		84EE4A0C2189BFC600FC301E /* ContactViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactViewController.xib; sourceTree = "<group>"; };
+		84EE4A122189C84D00FC301E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84EE4A142189C87900FC301E /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		84EE4A162189D20C00FC301E /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		84EE4A182189D22C00FC301E /* ColorStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorStyle.swift; sourceTree = "<group>"; };
+		84EE4A1B2189D88D00FC301E /* PoorStory-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PoorStory-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +118,14 @@
 		84EE49C92189B7F400FC301E /* Tab_bar_example */ = {
 			isa = PBXGroup;
 			children = (
+				84EE4A1A2189D82100FC301E /* Fonts */,
+				84EE4A152189D1EF00FC301E /* Style */,
 				84EE49F82189BD9300FC301E /* ViewController */,
 				84EE49CA2189B7F400FC301E /* AppDelegate.swift */,
 				84EE49D12189B7F600FC301E /* Assets.xcassets */,
 				84EE49D32189B7F600FC301E /* LaunchScreen.storyboard */,
 				84EE49D62189B7F600FC301E /* Info.plist */,
+				84EE4A132189C84D00FC301E /* Localizable.strings */,
 			);
 			path = Tab_bar_example;
 			sourceTree = "<group>";
@@ -181,6 +193,23 @@
 				84EE49FE2189BE2000FC301E /* ChatViewController.xib */,
 			);
 			path = ChatViewController;
+			sourceTree = "<group>";
+		};
+		84EE4A152189D1EF00FC301E /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				84EE4A162189D20C00FC301E /* Style.swift */,
+				84EE4A182189D22C00FC301E /* ColorStyle.swift */,
+			);
+			path = Style;
+			sourceTree = "<group>";
+		};
+		84EE4A1A2189D82100FC301E /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				84EE4A1B2189D88D00FC301E /* PoorStory-Regular.ttf */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -269,6 +298,7 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 84EE49BE2189B7F300FC301E;
 			productRefGroup = 84EE49C82189B7F400FC301E /* Products */;
@@ -288,6 +318,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EE4A082189BE5500FC301E /* ServicesViewController.xib in Resources */,
+				84EE4A1C2189D88D00FC301E /* PoorStory-Regular.ttf in Resources */,
+				84EE4A112189C84D00FC301E /* Localizable.strings in Resources */,
 				84EE4A0E2189BFC600FC301E /* ContactViewController.xib in Resources */,
 				84EE49D52189B7F600FC301E /* LaunchScreen.storyboard in Resources */,
 				84EE49D22189B7F600FC301E /* Assets.xcassets in Resources */,
@@ -318,8 +350,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				84EE49FF2189BE2000FC301E /* ChatViewController.swift in Sources */,
+				84EE4A172189D20C00FC301E /* Style.swift in Sources */,
 				84EE49CB2189B7F400FC301E /* AppDelegate.swift in Sources */,
 				84EE4A072189BE5500FC301E /* ServicesViewController.swift in Sources */,
+				84EE4A192189D22C00FC301E /* ColorStyle.swift in Sources */,
 				84EE4A032189BE3900FC301E /* LikeViewController.swift in Sources */,
 				84EE4A0D2189BFC600FC301E /* ContactViewController.swift in Sources */,
 			);
@@ -365,6 +399,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		84EE4A132189C84D00FC301E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84EE4A122189C84D00FC301E /* en */,
+				84EE4A142189C87900FC301E /* es */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -372,6 +415,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -433,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";

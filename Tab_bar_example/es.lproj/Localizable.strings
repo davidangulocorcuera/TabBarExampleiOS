@@ -1,0 +1,11 @@
+/* 
+  File.strings
+  Tab_bar_example
+
+  Created by Biolizard on 31/10/2018.
+  Copyright © 2018 Biolizard. All rights reserved.
+*/
+"tittle_chats" = "Chats";
+"tittle_contacts" = "Contactos";
+"tittle_favorites" = "Favoritos";
+"tittle_settings" = "Ajustes";

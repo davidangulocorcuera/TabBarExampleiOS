@@ -12,7 +12,7 @@ class LikeViewController: UIViewController {
     init(){
         super.init(nibName: "LikeViewController", bundle: nil)
         self.tabBarItem.image = UIImage(named: "like")
-        self.title = "Favs"
+   self.title = NSLocalizedString("tittle_favorites", comment: "")
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -12,7 +12,7 @@ class ServicesViewController: UIViewController {
     init(){
         super.init(nibName: "ServicesViewController", bundle: nil)
         self.tabBarItem.image = UIImage(named: "services")
-        self.title = "Services"
+      self.title = NSLocalizedString("tittle_settings", comment: "")
     }
     
     required init?(coder aDecoder: NSCoder) {

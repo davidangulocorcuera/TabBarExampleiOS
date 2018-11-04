@@ -12,7 +12,7 @@ class ContactViewController: UIViewController {
     init(){
         super.init(nibName: "ContactViewController", bundle: nil)
         self.tabBarItem.image = UIImage(named: "contact")
-        self.title = "Contact"
+        self.title = NSLocalizedString("tittle_contacts", comment: "")
     }
     
     required init?(coder aDecoder: NSCoder) {

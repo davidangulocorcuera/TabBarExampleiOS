@@ -12,17 +12,27 @@ class ChatViewController: UIViewController {
     init(){
         super.init(nibName: "ChatViewController", bundle: nil)
         self.tabBarItem.image = UIImage(named: "message")
-        self.title = "Chat"
+        self.title = NSLocalizedString("tittle_chats", comment: "")
     }
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
     }
+ 
     
     override func viewDidLoad() {
+         setupBarButtonsItems()
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    private func setupBarButtonsItems(){
+        
+        let addButton = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(onButtonPresssed))
+            navigationItem.setRightBarButton(addButton, animated: false)
+    }
+    @objc private func onButtonPresssed(){
+        
     }
 
 
