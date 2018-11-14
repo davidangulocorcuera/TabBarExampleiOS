@@ -11,6 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="Tab_bar_example" customModuleProvider="target">
             <connections>
+                <outlet property="tableViewInfo" destination="VAR-pT-ghv" id="Xoy-va-P3J"/>
+                <outlet property="tf_id" destination="OWX-lE-WEe" id="kOu-VA-H7u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,8 +20,49 @@
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="keO-3h-aAQ">
+                    <rect key="frame" x="144" y="519" width="87" height="30"/>
+                    <color key="backgroundColor" red="0.44521884340000001" green="0.50191662520000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <state key="normal" title="search">
+                        <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonPressed" destination="-1" eventType="touchUpInside" id="gIs-Dq-Sla"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OWX-lE-WEe">
+                    <rect key="frame" x="139" y="468" width="97" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VAR-pT-ghv">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="426"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Pqg-8t-5DS"/>
+                        <outlet property="delegate" destination="-1" id="Erf-dv-h1z"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="0.48323957445246002" green="1" blue="0.66654548223398713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="VAR-pT-ghv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3EL-cZ-H2a"/>
+                <constraint firstItem="VAR-pT-ghv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6t7-Q1-wBE"/>
+                <constraint firstItem="OWX-lE-WEe" firstAttribute="top" secondItem="VAR-pT-ghv" secondAttribute="bottom" constant="42" id="9nD-I8-1Fd"/>
+                <constraint firstItem="OWX-lE-WEe" firstAttribute="top" secondItem="VAR-pT-ghv" secondAttribute="bottom" constant="42" id="Fow-l3-sLQ"/>
+                <constraint firstItem="keO-3h-aAQ" firstAttribute="top" secondItem="OWX-lE-WEe" secondAttribute="bottom" constant="21" id="Oha-Pw-r98"/>
+                <constraint firstItem="VAR-pT-ghv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RcG-Np-vht"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="keO-3h-aAQ" secondAttribute="bottom" constant="118" id="bde-BQ-Qyj"/>
+                <constraint firstItem="keO-3h-aAQ" firstAttribute="top" secondItem="OWX-lE-WEe" secondAttribute="bottom" constant="21" id="h6T-NB-cx3"/>
+                <constraint firstItem="keO-3h-aAQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="144" id="hq0-qU-TjW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OWX-lE-WEe" secondAttribute="trailing" constant="139" id="p2c-q9-NEN"/>
+                <constraint firstItem="OWX-lE-WEe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="139" id="tsx-Ys-s1W"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="keO-3h-aAQ" secondAttribute="trailing" constant="144" id="yCu-h8-13H"/>
+            </constraints>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="154.27286356821591"/>
         </view>
     </objects>
 </document>

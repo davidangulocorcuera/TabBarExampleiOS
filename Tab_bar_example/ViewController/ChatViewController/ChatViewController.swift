@@ -30,6 +30,7 @@ class ChatViewController: UIViewController {
         
         let addButton = UIBarButtonItem(title: "+", style: .plain, target: self, action: #selector(onButtonPresssed))
             navigationItem.setRightBarButton(addButton, animated: false)
+       
     }
     @objc private func onButtonPresssed(){
         
