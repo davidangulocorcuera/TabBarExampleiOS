@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ContactViewController" customModule="Tab_bar_example" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="rHO-Qk-VYH" id="FOv-Ek-ynv"/>
                 <outlet property="tableViewInfo" destination="VAR-pT-ghv" id="Xoy-va-P3J"/>
                 <outlet property="tf_id" destination="OWX-lE-WEe" id="kOu-VA-H7u"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -45,18 +46,25 @@
                         <outlet property="delegate" destination="-1" id="Erf-dv-h1z"/>
                     </connections>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="rHO-Qk-VYH">
+                    <rect key="frame" x="177" y="434" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" red="0.48323957445246002" green="1" blue="0.66654548223398713" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="rHO-Qk-VYH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="177" id="2ry-BY-3vc"/>
                 <constraint firstItem="VAR-pT-ghv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="3EL-cZ-H2a"/>
                 <constraint firstItem="VAR-pT-ghv" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6t7-Q1-wBE"/>
                 <constraint firstItem="OWX-lE-WEe" firstAttribute="top" secondItem="VAR-pT-ghv" secondAttribute="bottom" constant="42" id="9nD-I8-1Fd"/>
                 <constraint firstItem="OWX-lE-WEe" firstAttribute="top" secondItem="VAR-pT-ghv" secondAttribute="bottom" constant="42" id="Fow-l3-sLQ"/>
                 <constraint firstItem="keO-3h-aAQ" firstAttribute="top" secondItem="OWX-lE-WEe" secondAttribute="bottom" constant="21" id="Oha-Pw-r98"/>
                 <constraint firstItem="VAR-pT-ghv" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="RcG-Np-vht"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rHO-Qk-VYH" secondAttribute="trailing" constant="178" id="V8k-yz-0N8"/>
+                <constraint firstItem="OWX-lE-WEe" firstAttribute="top" secondItem="rHO-Qk-VYH" secondAttribute="bottom" constant="14" id="YHE-iF-5Vg"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="keO-3h-aAQ" secondAttribute="bottom" constant="118" id="bde-BQ-Qyj"/>
                 <constraint firstItem="keO-3h-aAQ" firstAttribute="top" secondItem="OWX-lE-WEe" secondAttribute="bottom" constant="21" id="h6T-NB-cx3"/>
                 <constraint firstItem="keO-3h-aAQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="144" id="hq0-qU-TjW"/>
+                <constraint firstItem="rHO-Qk-VYH" firstAttribute="top" secondItem="VAR-pT-ghv" secondAttribute="bottom" constant="8" id="jc3-bi-4Sp"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="OWX-lE-WEe" secondAttribute="trailing" constant="139" id="p2c-q9-NEN"/>
                 <constraint firstItem="OWX-lE-WEe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="139" id="tsx-Ys-s1W"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="keO-3h-aAQ" secondAttribute="trailing" constant="144" id="yCu-h8-13H"/>

@@ -10,9 +10,13 @@ import UIKit
 import Alamofire
 class ContactViewController: UIViewController {
     @IBOutlet weak var tableViewInfo: UITableView!
-    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     @IBOutlet weak var tf_id: UITextField!
     internal var posts: [Post] = []
+    internal var filteredPosts: [Post] = [
+    ]
+    internal var refreshControl = UIRefreshControl()
+    let searchController = UISearchController(searchResultsController: nil)
     
     init(){
         super.init(nibName: "ContactViewController", bundle: nil)
@@ -25,10 +29,55 @@ class ContactViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "buscar"
+        searchController.searchBar.backgroundColor = UIColor.white
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
+        navigationItem.hidesSearchBarWhenScrolling = false
+        
+        
+        refreshControl.addTarget(self, action: #selector(refreshControlPulled), for: .valueChanged)
+        tableViewInfo.addSubview(refreshControl)
+        activityIndicator.isHidden = true
         registercells()
         getPosts(for: 1)
         getPostsAlamofire(userId: 1)
         // Do any additional setup after loading the view.
+    }
+    internal func searchBarIsEmpty() -> Bool {
+        return searchController.searchBar.text?.isEmpty ?? true
+    }
+    internal func isfiltering() -> Bool {
+        return searchController.isActive && !searchBarIsEmpty()
+    }
+    internal func filterContentForSearchText(_ searchtext: String){
+        filteredPosts = posts.filter({ (aPost: Post) -> Bool in
+            
+            
+            if  let postId = Int(searchtext){ return (postId == aPost.id)}
+            return aPost.title.lowercased().contains(searchtext.lowercased())
+           
+        
+        })
+        tableViewInfo.reloadData()
+    }
+    @objc func refreshControlPulled(){
+        refreshData()
+    }
+    internal func refreshData(){
+        tf_id.resignFirstResponder()
+        if let text = tf_id.text{
+            if let userId = Int(text){
+                getPostsAlamofire(userId: userId)
+            }
+        }
+        else {
+            refreshControl.endRefreshing()
+            showAlertViewWithTittle("Fallo en el sistema", message: "No has introducido un numero")
+
+        }
     }
     private func registercells(){
         
@@ -77,14 +126,24 @@ class ContactViewController: UIViewController {
                 getPostsAlamofire(userId: userId)
             }
             else{
-                
+                showAlertViewWithTittle("Fallo en el sistema", message: "No has introducido un numero")
             }
         }
     }
    
+    internal func showAlertViewWithTittle(_ tittle: String, message: String){
+        let alert = UIAlertController(title: tittle, message: message, preferredStyle: .alert)
+        let action = UIAlertAction(title: "OK", style: .cancel){(alert) in}
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
+        //self.refreshControl.endRefreshing()
+            
+        
+    }
     
     
     internal func getPostsAlamofire(userId: Int){
+        activityIndicator.isHidden = false
         Alamofire.request("https://jsonplaceholder.typicode.com/posts", method: HTTPMethod.get, parameters: ["userId" : userId], encoding: URLEncoding.default, headers: nil).responseData {(response) in
             if let jsonData = response.data {
                 let decoder = JSONDecoder()
@@ -92,6 +151,8 @@ class ContactViewController: UIViewController {
                     self.posts = try decoder.decode([Post].self, from: jsonData)
                     print("Total posts using Alamofire: ", self.posts.count)
                     self.tableViewInfo.reloadData()
+                    self.activityIndicator.isHidden = true
+                    self.refreshControl.endRefreshing()
                 }
                 catch let error {
                     print("Error decoding [Post]:", error.localizedDescription)
@@ -116,6 +177,9 @@ UITableViewDelegate,UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if(isfiltering()){
+            return filteredPosts.count
+        }
         return posts.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -131,15 +195,27 @@ UITableViewDelegate,UITableViewDataSource{
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:InfoCell = (tableView.dequeueReusableCell(withIdentifier: "InfoCell", for: indexPath) as? InfoCell)!
-       
+        if(isfiltering()){
+            let post = filteredPosts[indexPath.row]
+            cell.lbl_info.text =  post.title
+        }
+        else {
+            
         let post = posts[indexPath.row]
-        cell.lbl_info.text =  post.title
+            cell.lbl_info.text =  post.title
+            
+        }
         return cell
     }
     
     
     
     
+}
+extension ContactViewController: UISearchResultsUpdating{
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContentForSearchText(searchController.searchBar.text!)
+    }
 }
 
 

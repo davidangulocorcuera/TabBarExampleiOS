@@ -8,11 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		508D2F5F9D5BBFA5C76702A2 /* Pods_Tab_bar_exampleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 362677C86461DFB102793B4A /* Pods_Tab_bar_exampleTests.framework */; };
+		841CA50F21A56A0100B43644 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 841CA50D21A56A0100B43644 /* MapViewController.swift */; };
+		841CA51021A56A0100B43644 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 841CA50E21A56A0100B43644 /* MapViewController.xib */; };
 		84E514F4219C2E5400E73452 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E514F2219C2E5400E73452 /* InfoCell.swift */; };
 		84E514F5219C2E5400E73452 /* InfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E514F3219C2E5400E73452 /* InfoCell.xib */; };
 		84E514F8219C391200E73452 /* ComentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E514F7219C391200E73452 /* ComentsViewController.swift */; };
 		84E514FA219C392A00E73452 /* Coments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E514F9219C392A00E73452 /* Coments.swift */; };
 		84E514FC219C3CAA00E73452 /* ComentsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84E514FB219C3CAA00E73452 /* ComentsViewController.xib */; };
+		84E514FE219C4ECD00E73452 /* Users.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E514FD219C4ECD00E73452 /* Users.swift */; };
+		84E51500219C4F8F00E73452 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E514FF219C4F8F00E73452 /* Address.swift */; };
+		84E51502219C501200E73452 /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51501219C501200E73452 /* Geo.swift */; };
+		84E51504219C506C00E73452 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84E51503219C506C00E73452 /* Company.swift */; };
 		84EE49CB2189B7F400FC301E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EE49CA2189B7F400FC301E /* AppDelegate.swift */; };
 		84EE49D22189B7F600FC301E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49D12189B7F600FC301E /* Assets.xcassets */; };
 		84EE49D52189B7F600FC301E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EE49D32189B7F600FC301E /* LaunchScreen.storyboard */; };
@@ -56,12 +62,18 @@
 		0883E8E755E6FE96E60CCB4C /* Pods_Tab_bar_exampleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tab_bar_exampleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		362677C86461DFB102793B4A /* Pods_Tab_bar_exampleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tab_bar_exampleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		61750C6A86F32F901E39435C /* Pods-Tab_bar_example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tab_bar_example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tab_bar_example/Pods-Tab_bar_example.release.xcconfig"; sourceTree = "<group>"; };
+		841CA50D21A56A0100B43644 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		841CA50E21A56A0100B43644 /* MapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		843346EA57C98E60429344A3 /* Pods-Tab_bar_exampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tab_bar_exampleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tab_bar_exampleTests/Pods-Tab_bar_exampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		84E514F2219C2E5400E73452 /* InfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
 		84E514F3219C2E5400E73452 /* InfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoCell.xib; sourceTree = "<group>"; };
 		84E514F7219C391200E73452 /* ComentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComentsViewController.swift; sourceTree = "<group>"; };
 		84E514F9219C392A00E73452 /* Coments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coments.swift; sourceTree = "<group>"; };
 		84E514FB219C3CAA00E73452 /* ComentsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComentsViewController.xib; sourceTree = "<group>"; };
+		84E514FD219C4ECD00E73452 /* Users.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Users.swift; sourceTree = "<group>"; };
+		84E514FF219C4F8F00E73452 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		84E51501219C501200E73452 /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		84E51503219C506C00E73452 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		84EE49C72189B7F400FC301E /* Tab_bar_example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tab_bar_example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EE49CA2189B7F400FC301E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84EE49D12189B7F600FC301E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -130,6 +142,15 @@
 				0883E8E755E6FE96E60CCB4C /* Pods_Tab_bar_exampleUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		841CA50C21A569E700B43644 /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				841CA50D21A56A0100B43644 /* MapViewController.swift */,
+				841CA50E21A56A0100B43644 /* MapViewController.xib */,
+			);
+			path = MapViewController;
 			sourceTree = "<group>";
 		};
 		84E514F0219C2E2300E73452 /* Cells */ = {
@@ -218,6 +239,7 @@
 		84EE49F82189BD9300FC301E /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				841CA50C21A569E700B43644 /* MapViewController */,
 				84E514F6219C38D400E73452 /* ComentsViewController */,
 				84EE49FC2189BDCB00FC301E /* ChatViewController */,
 				84EE49FB2189BDB800FC301E /* LikeViewController */,
@@ -293,6 +315,10 @@
 			children = (
 				84F016DE21930E4B00BDDF76 /* Post.swift */,
 				84E514F9219C392A00E73452 /* Coments.swift */,
+				84E514FD219C4ECD00E73452 /* Users.swift */,
+				84E514FF219C4F8F00E73452 /* Address.swift */,
+				84E51501219C501200E73452 /* Geo.swift */,
+				84E51503219C506C00E73452 /* Company.swift */,
 			);
 			path = Objects;
 			sourceTree = "<group>";
@@ -428,6 +454,7 @@
 				84EE49D22189B7F600FC301E /* Assets.xcassets in Resources */,
 				84EE4A002189BE2000FC301E /* ChatViewController.xib in Resources */,
 				84EE4A042189BE3900FC301E /* LikeViewController.xib in Resources */,
+				841CA51021A56A0100B43644 /* MapViewController.xib in Resources */,
 				84E514F5219C2E5400E73452 /* InfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -546,15 +573,20 @@
 			files = (
 				84EE49FF2189BE2000FC301E /* ChatViewController.swift in Sources */,
 				84EE4A172189D20C00FC301E /* Style.swift in Sources */,
+				84E51500219C4F8F00E73452 /* Address.swift in Sources */,
+				84E51502219C501200E73452 /* Geo.swift in Sources */,
 				84EE49CB2189B7F400FC301E /* AppDelegate.swift in Sources */,
 				84F016DF21930E4B00BDDF76 /* Post.swift in Sources */,
+				84E514FE219C4ECD00E73452 /* Users.swift in Sources */,
 				84E514F4219C2E5400E73452 /* InfoCell.swift in Sources */,
+				84E51504219C506C00E73452 /* Company.swift in Sources */,
 				84E514FA219C392A00E73452 /* Coments.swift in Sources */,
 				84EE4A072189BE5500FC301E /* ServicesViewController.swift in Sources */,
 				84E514F8219C391200E73452 /* ComentsViewController.swift in Sources */,
 				84EE4A192189D22C00FC301E /* ColorStyle.swift in Sources */,
 				84EE4A032189BE3900FC301E /* LikeViewController.swift in Sources */,
 				84EE4A0D2189BFC600FC301E /* ContactViewController.swift in Sources */,
+				841CA50F21A56A0100B43644 /* MapViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
